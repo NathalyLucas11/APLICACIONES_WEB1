@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reporte asistencia</title>
+    <link rel="stylesheet" href="reporte.css">
+<!-- para exportar a excel -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<!-- para exportar a pdf -->
+<!-- jsPDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<!-- jsPDF-AutoTable -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.1/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+<div class="dashboard-header">
+  <div class="logo-nombre">
+    <img src="LOGO-ULEAM-VERTICALL.png" alt="ULEAM" class="logo-header" />
+    <span class="nombre-docente">BIENVENIDO/A</span>
+  </div>
+  <a href="#" class="cerrar-sesion" id="cerrarSesion">Cerrar sesión</a>
+</div>
+
+    <div class="menu-nav">
+    <a href="dashboard.html">Panel principal</a>
+    <a href="asignaturas.html">Mis asignaturas</a>
+    <a href="registro.html">Registro de asistencia</a>
+    <a href="historial.html">Historial de asistencia</a>
+    <a class="activo" href="reporte.html">Reporte de asistencia</a>
+    <a href="perfil.html">Mi perfil</a>
+    </div>
+<!-- Filtros y acciones de reporte -->
+<main class="main-content">
+    <h2>Reporte de Asistencia</h2>
+    <div class="filtros-reporte">
+        <label>
+            Asignatura:
+            <select id="selectAsignatura">
+                <option value="web1a">Aplicaciones Web 1A</option>
+                <option value="so">Sistemas Operativos C</option>
+                <option value="seguridad">Seguridad Informatica A</option>
+            </select>
+        </label>
+        <label>
+            Fecha:
+            <input type="date" id="inputFecha" value="2025-10-06">
+        </label>
+        <label>
+            Período:
+            <select id="selectPeriodo">
+                <option value="2025-2">2025-2</option>
+                <option value="2025-1">2025-1</option>
+                <option value="2024-2">2024-2</option>
+            </select>
+        </label>
+        <button id="btnFiltrar">Filtrar</button>
+    </div>
+    <section class="acciones-reporte">
+        <button id="btnExportarPDF">Exportar a PDF</button>
+        <button id="btnExportarExcel">Exportar a Excel</button>
+        <button id="btnGuardar">Guardar Reporte</button>
+    </section>
+
+    <section class="tabla-reporte-seccion">
+        <table class="tabla-reporte">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Apellidos y Nombres</th>
+                    <th>Matrícula</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyReporte">
+                <!-- Se llena por JS -->
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<script src="reporte.js"></script>
+<!-- Tus otras etiquetas... -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.1/jspdf.plugin.autotable.min.js"></script>
+<script src="reporte.js"></script>
+</body>
+</html>

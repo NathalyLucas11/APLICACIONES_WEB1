@@ -1,0 +1,81 @@
+body {
+    background: linear-gradient(#eee, #ccc);
+    font-family: Arial, sans-serif;
+}
+body {
+  background-image: url('fondo_uleam.jpg');
+  background-size: cover;         /* Ajustar la imagen a toda la pantalla */
+  background-position: center;    /* Centrar la imagen de fondo */
+  background-repeat: no-repeat;   /* No repetir la imagen */
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+body {
+  background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('fondo_uleam.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.login-container {
+    width: 340px;
+    padding: 30px 25px;
+    background: #fff;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.logo {
+    width: 95px;
+    margin-bottom: 10px;
+}
+h1 {
+    color: #e2252b;
+    margin: 0;
+}
+.subtitulo {
+    color: #757575;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+h2 {
+    margin: 15px 0 18px 0;
+    font-size: 16px;
+    color: #3b3b3b;
+}
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 92%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+a {
+    color: #7da933;
+    text-decoration: none;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background: #1a8d1f;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 7px;
+}
+.oculto {
+    display: none;
+}

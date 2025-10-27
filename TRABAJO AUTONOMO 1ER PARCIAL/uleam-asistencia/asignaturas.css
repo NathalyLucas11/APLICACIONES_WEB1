@@ -1,0 +1,147 @@
+body {
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+body {
+  background-image: url('fondo_uleam.jpg');
+  background-size: cover;         /* Ajustar la imagen a toda la pantalla */
+  background-position: center;    /* Centrar la imagen de fondo */
+  background-repeat: no-repeat;   /* No repetir la imagen */
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+body {
+  background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('fondo_uleam.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+.dashboard-header {
+  display: flex;
+  justify-content: space-between; /* Espaciar extremos */
+  align-items: center;
+  background: #f5ffd1;
+  padding: 5px 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.logo-nombre {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header {
+  width: 100px;
+  margin-right: 18px;
+}
+
+.nombre-docente {
+  font-size: 28px;
+  font-weight: 700;
+  color: #b71c1c;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: 1px 1px 3px #f8bbbb;
+  margin-top: 6px;
+}
+
+.cerrar-sesion {
+  color: #757575;
+  text-decoration: none;
+  font-size: 16px;
+  background: #ffeaea;
+  border: 1px solid #e2252b;
+  border-radius: 6px;
+  padding: 7px 20px;
+  transition: background 0.2s, color 0.2s;
+  margin-left: 24px;
+}
+
+.cerrar-sesion:hover {
+  background: #e2252b;
+  color: #fff;
+}
+
+.menu-nav {
+    margin: 0;
+    padding: 0 0 0 16px;
+    background: #1a8d1f;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-nav a {
+    color: #606c38;
+    background: #d8e7a3;
+    text-decoration: none;
+    margin: 7px 7px 7px 0;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.menu-nav a.activo, .menu-nav a:hover {
+    background: #b7d32c;
+    color: #fff;
+}
+.asignaturas-main {
+    flex: 1;
+    padding: 32px 34px;
+}
+.titulo-main {
+    font-size: 23px;
+    margin-bottom: 28px;
+    color: #333;
+}
+.tarjetas-asignaturas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.asignatura-card {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    width: 270px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.img-asignatura {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+.btn-asistencia {
+    background: #e2252b;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+.btn-asistencia:hover {
+    background: #b6181c;
+}
+.info-asignatura {
+    padding: 24px 18px 14px 18px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.nombre {
+    margin: 0 0 7px 0;
+    font-size: 17px;
+    color: #243b74;
+}

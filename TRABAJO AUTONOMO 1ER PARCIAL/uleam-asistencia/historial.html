@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Historial de asistencia</title>
+    <link rel="stylesheet" href="historial.css">
+</head>
+<body>
+<div class="dashboard-header">
+  <div class="logo-nombre">
+    <img src="LOGO-ULEAM-VERTICALL.png" alt="ULEAM" class="logo-header" />
+    <span class="nombre-docente">BIENVENIDO/A</span>
+  </div>
+  <a href="#" class="cerrar-sesion" id="cerrarSesion">Cerrar sesión</a>
+</div>
+
+    <div class="menu-nav">
+    <a href="dashboard.html">Panel principal</a>
+    <a href="asignaturas.html">Mis asignaturas</a>
+    <a href="registro.html">Registro de asistencia</a>
+    <a class="activo" href="historial.html">Historial de asistencia</a>
+    <a href="reporte.html">Reporte de asistencia</a>
+    <a href="perfil.html">Mi perfil</a>
+
+    </div>
+    <!-- Filtros de búsqueda -->
+<main class="main-content">
+    <h2>Buscar en el historial de asistencia</h2>
+    <div class="filtros">
+        <label>
+            Asignatura:
+            <select id="selectAsignatura">
+                <option value="">-- Todas --</option>
+                <option value="web1">Aplicaciones Web 1</option>
+                <option value="so">Sistemas Operativos</option>
+                <option value="seguridad">Seguridad Informatica</option>
+                <option value="fp">Fundamentos de Programacion</option>
+                <option value="is1">Ingenieria Software 1</option>
+                <option value="sd">Sistemas Digitales</option>
+                <option value="appd">Aplicaciones Distribuidas</option>
+                <option value="fm">Fundamentos Matematicos</option>
+                <option value="led">Logica y Estructura Discreta</option>
+                <option value="rcc">Redes de Computadores y Comunicaciones</option>
+            </select>
+        </label>
+        <label>
+            Estudiante:
+            <select id="selectEstudiante">
+                                <option value="">-- Todos --</option>
+                <option value="mat2025001">Andrade López Valeria Sofia</option>
+                <option value="mat2025002">Bermudez Ruiz Juan Carlos</option>
+                <option value="mat2025003">Cevallos Ortiz Elena Andrea</option>
+            </select>
+        </label>
+        <label>
+            Período académico:
+            <select id="selectPeriodo">
+                <option value="">-- Todos --</option>
+                <option value="2024-1">2024-1</option>
+                <option value="2024-2">2024-2</option>
+                <option value="2025-1">2025-1</option>
+            </select>
+        </label>
+        <button id="btnBuscar">Buscar</button>
+    </div>
+        <!-- Resultados del historial -->
+    <section class="tabla-historial-seccion">
+        <table class="tabla-historial">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Asignatura</th>
+                    <th>Estudiante</th>
+                    <th>Matrícula</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyHistorial">
+                <!-- Se llenará dinámicamente -->
+            </tbody>
+        </table>
+    </section>
+</main>
+<script src="historial.js"></script>
+</body>
+</html>

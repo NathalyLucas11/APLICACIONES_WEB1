@@ -1,0 +1,174 @@
+body {
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+body {
+  background-image: url('fondo_uleam.jpg');
+  background-size: cover;         /* Ajustar la imagen a toda la pantalla */
+  background-position: center;    /* Centrar la imagen de fondo */
+  background-repeat: no-repeat;   /* No repetir la imagen */
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+body {
+  background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('fondo_uleam.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+.dashboard-header {
+  display: flex;
+  justify-content: space-between; /* Espaciar extremos */
+  align-items: center;
+  background: #f5ffd1;
+  padding: 5px 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.logo-nombre {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header {
+  width: 100px;
+  margin-right: 18px;
+}
+
+.nombre-docente {
+  font-size: 28px;
+  font-weight: 700;
+  color: #b71c1c;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: 1px 1px 3px #f8bbbb;
+  margin-top: 6px;
+}
+
+.cerrar-sesion {
+  color: #757575;
+  text-decoration: none;
+  font-size: 16px;
+  background: #ffeaea;
+  border: 1px solid #e2252b;
+  border-radius: 6px;
+  padding: 7px 20px;
+  transition: background 0.2s, color 0.2s;
+  margin-left: 24px;
+}
+
+.cerrar-sesion:hover {
+  background: #e2252b;
+  color: #fff;
+}
+
+.menu-nav {
+    margin: 0;
+    padding: 0 0 0 16px;
+    background: #1a8d1f;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-nav a {
+    color: #606c38;
+    background: #d8e7a3;
+    text-decoration: none;
+    margin: 7px 7px 7px 0;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.menu-nav a.activo, .menu-nav a:hover {
+    background: #b7d32c;
+    color: #fff;
+}
+.main-content {
+    max-width: 900px;
+    margin: 32px auto 0 auto;
+    background: #fff;
+    border-radius: 7px;
+    padding: 32px 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+}
+h2 {
+    margin-top: 0;
+    font-size: 23px;
+    color: #29476d;
+}
+.filtros {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    background: #f7fae3;
+    padding: 20px 23px 15px 23px;
+    border-radius: 6px;
+    margin-bottom: 26px;
+    align-items: flex-end;
+}
+.filtros label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #556837;
+    font-weight: 600;
+}
+.filtros select {
+    margin-top: 5px;
+    padding: 7px 11px;
+    border-radius: 3px;
+    border: 1px solid #bcd859;
+    font-size: 15px;
+}
+#btnBuscar {
+    font-size: 16px;
+    padding: 8px 22px;
+    background: #9ec826;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 12px;
+    margin-top: 5px;
+    transition: background 0.17s;
+}
+#btnBuscar:hover {
+    background: #7da932;
+    }
+.tabla-historial-seccion {
+    margin-top: 18px;
+    overflow-x: auto;
+}
+.tabla-historial {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f7f7f7;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.tabla-historial th, .tabla-historial td {
+    padding: 10px 7px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 16px;
+}
+.tabla-historial th {
+    background: #e8f3c9;
+    color: #48602b;
+    font-size: 16px;
+    font-weight: 700;
+}
+.tabla-historial tbody tr:hover {
+    background: #eef8dd;
+}
+.estado-presente {
+    color: #63a518;
+    font-weight: 700;
+}
+.estado-falta {
+    color: #e2252b;
+    font-weight: 700;
+}
