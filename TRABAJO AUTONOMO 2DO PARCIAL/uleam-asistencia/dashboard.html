@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Docente ULEAM</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<div class="dashboard-header">
+  <div class="logo-nombre">
+    <img src="LOGO-ULEAM-VERTICALL.png" alt="ULEAM" class="logo-header" />
+    <span class="nombre-docente">BIENVENIDO/A</span>
+  </div>
+  <a href="#" class="cerrar-sesion" id="cerrarSesion">Cerrar sesión</a>
+</div>
+
+
+
+    <div class="menu-nav">
+    <a class="activo" href="dashboard.html">Panel principal</a>
+    <a href="asignaturas.html">Mis asignaturas</a>
+    <a href="registro.html">Registro de asistencia</a>
+    <a href="historial.html">Historial de asistencia</a>
+    <a href="reporte.html">Reporte de asistencia</a>
+    <a href="perfil.html">Mi perfil</a>
+    </div>
+
+    <div class="resumen-seccion">
+        <h2 class="resumen-titulo">RESUMEN:</h2>
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <div class="tarjeta-header" onclick="toggleDetalle('detalle1')">
+                    Asignaturas activas
+                </div>
+                <div class="tarjeta-detalle" id="detalle1">
+                    <span id="totalAsignaturas">0</span>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="tarjeta-header" onclick="toggleDetalle('detalle2')">
+                    Asistencias Hoy
+                </div>
+                <div class="tarjeta-detalle" id="detalle2">
+                    <span id="asistenciasHoy">0</span>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="tarjeta-header" onclick="toggleDetalle('detalle3')">
+                    Estudiantes totales
+                </div>
+                <div class="tarjeta-detalle" id="detalle3">
+                    <span id="totalEstudiantes">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

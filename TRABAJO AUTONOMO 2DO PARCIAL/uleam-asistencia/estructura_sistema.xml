@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sistema_asistencia>
+  <metadata>
+    <nombre>Sistema Control Asistencia ULEAM</nombre>
+    <version>2.0</version>
+    <fecha_creacion>2024-01-01</fecha_creacion>
+  </metadata>
+  
+  <entidades>
+    <entidad nombre="Usuario">
+      <campo nombre="id" tipo="numero" clave="true" />
+      <campo nombre="usuario" tipo="texto" longitud="50" requerido="true" />
+      <campo nombre="contrasena" tipo="texto" longitud="255" requerido="true" />
+      <campo nombre="email" tipo="email" requerido="true" />
+      <campo nombre="nombre_completo" tipo="texto" longitud="150" requerido="true" />
+    </entidad>
+    
+    <entidad nombre="Asistencia">
+      <campo nombre="id" tipo="numero" clave="true" />
+      <campo nombre="estudiante_id" tipo="texto" requerido="true" />
+      <campo nombre="asignatura" tipo="texto" requerido="true" />
+      <campo nombre="fecha" tipo="fecha" requerido="true" />
+      <campo nombre="estado" tipo="texto" valores="P,F" requerido="true" />
+    </entidad>
+  </entidades>
+  
+  <validaciones>
+    <regla campo="email" patron=".*@uleam\.edu\.ec$" mensaje="Correo debe ser institucional ULEAM" />
+    <regla campo="matricula" patron="^MAT\d{7}$" mensaje="Matrícula debe seguir formato MAT0000000" />
+  </validaciones>
+</sistema_asistencia>

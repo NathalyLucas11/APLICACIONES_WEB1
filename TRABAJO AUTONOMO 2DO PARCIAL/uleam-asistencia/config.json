@@ -1,0 +1,19 @@
+{
+  "sistema": {
+    "nombre": "Sistema de Control de Asistencia Docentes ULEAM",
+    "version": "2.0.0",
+    "fecha_creacion": "2024-01-01"
+  },
+  "universidad": {
+    "nombre_completo": "Universidad Laica Eloy Alfaro de Manabí",
+    "siglas": "ULEAM",
+    "logo_principal": "logo_uleam.png",
+    "logo_vertical": "LOGO-ULEAM-VERTICALL.png"
+  },
+  "configuracion": {
+    "tiempo_sesion": 120,
+    "fecha_formato": "dd/mm/yyyy",
+    "idioma": "es",
+    "zona_horaria": "America/Guayaquil"
+  }
+}

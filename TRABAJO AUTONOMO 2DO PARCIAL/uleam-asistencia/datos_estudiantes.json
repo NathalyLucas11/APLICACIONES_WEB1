@@ -1,0 +1,36 @@
+{
+  "estudiantes": [
+    {
+      "id": 1,
+      "matricula": "MAT2025001",
+      "nombre": "Andrade López Valeria Sofia",
+      "email": "valeria.andrade@uleam.edu.ec",
+      "carrera": "Tecnologías de la Información",
+      "asignaturas": ["web1", "so", "seguridad"]
+    },
+    {
+      "id": 2,
+      "matricula": "MAT2025002",
+      "nombre": "Bermudez Ruiz Juan Carlos",
+      "email": "juan.bermudez@uleam.edu.ec",
+      "carrera": "Tecnologías de la Información",
+      "asignaturas": ["web1", "so"]
+    }
+  ],
+  "asignaturas": [
+    {
+      "codigo": "web1",
+      "nombre": "Aplicaciones Web 1",
+      "paralelo": "A",
+      "carrera": "Tecnologías de la Información",
+      "estudiantes": ["MAT2025001", "MAT2025002"]
+    },
+    {
+      "codigo": "so",
+      "nombre": "Sistemas Operativos",
+      "paralelo": "C",
+      "carrera": "Tecnologías de la Información",
+      "estudiantes": ["MAT2025001", "MAT2025002"]
+    }
+  ]
+}
